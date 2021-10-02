@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        //Aula sobre o DOM
+        /*
+        window.onload = function(){
+            //criando h1 no corpo do documento
+            var createH1 = document.createElement("h1");
+            //criando um nó para colocar dentro do h1 criado
+            var inputText = document.createTextNode("Olá Pessoal");
+            //colocando nó dentro do h1
+            createH1.appendChild(inputText);
+            //colocando tudo que foi feito no corpo
+            document.body.appendChild(createH1);
+        }
+        */
+
+        //FUNÇÃO EXECUTADA QUANDO A TELA É CARREGADA
+        window.onload = function(){
+            
+            //PEGANDO ELEMENTO PELO ID 'TABELA' E JOGANDO NA VARIÁVEL
+            var tabela = document.getElementById("tabela");
+            //PEGANDO ATRIBUTOS DE UMA TABELA. EX: LINHA, COLUNA, BORDA. E JOGANDO DENTRO DE UMA VARIÁVEL
+            var atributosTabela = tabela.attributes;
+            //FOR PRA PERCORRER TODOS OS ATRIBUTOD DE UMA TABELA
+            for(var i = 0; i < atributosTabela.length; i++){
+                //SE ACHAR UM ATRIBUTO COM NOME 'BORDER'
+                if(atributosTabela[i].nodeName.toLowerCase() == "border"){
+                    tabela.border = "4";
+                }
+            }
+
+            tabela.summary = "nota: Aumento de borda";
+
+
+            var tabela = document.getElementById("tabela");
+            //PEGANDO ATRIBUTOS DE UMA TABELA. EX: LINHA, COLUNA, BORDA. E JOGANDO DENTRO DE UMA VARIÁVEL
+            var atributosTabela = tabela.attributes;
+            //FOR PRA PERCORRER TODOS OS ATRIBUTOD DE UMA TABELA
+            for(var i = 0; i < atributosTabela.length; i++){
+                //SE ACHAR UM ATRIBUTO COM NOME 'BORDER'
+                if(atributosTabela[i].nodeName.toLowerCase() == "border"){
+                    tabela.border = "4";
+                }
+            }
+
+
+        }
+
+
+        
+
+    </script>
+</head>
+
+
+<body>
+    <table id = "tabela" border="0">
+        <tr>
+            <td>ffff</td> <td>fffff</td> <td>fffff</td>
+        </tr>
+        <tr>
+            <td>ffff</td> <td>ffff</td> <td>fffff</td>
+        </tr>
+    </table>
+</body>
+</html>

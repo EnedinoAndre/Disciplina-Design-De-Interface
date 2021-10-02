@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agenda Contatos</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+        
+        <div class="general">
+            <h1 class="title">Cadastro de Contatos</h1>
+
+            <div class="center" id="center">
+                <div id="formulario">
+                    <form class="formCadastro" id="formCadastro" >
+                        
+                            <div id="esquerda">
+                                <label for="txtNome">Nome</label> 
+                                <br>
+                                <input type="text" id="txtName" placeholder="Your Name" required="required">
+                                <br>
+
+                                <label for="txtPhone">Phone</label>
+                                <br>
+                                <input type="text" id="txtPhone" placeholder="Your Phone" required = "required">
+                                <br>
+
+                                <label for="txtRoad">Road</label>
+                                <br>
+                                <input type="text" id="txtRoad" placeholder="Your Road" required = "required">
+                                
+                            </div>
+                            <div id="esquerda">
+                                <label for="txtZipCode">Zip Code</label>
+                                <br>
+                                <input type="text" id="txtZipCode" placeholder="ZipCode" required = "required">
+                                <br>
+
+                                <label for="txtNumber">Number</label>
+                                <br>
+                                <input type="text" id="txtNumber" placeholder="Number" required = "required">
+                                <br>
+
+                                <label for="txtCityState">City State</label>
+                                <br>
+                                <input type="text" id="txtCityState" placeholder="City / State" required = "required">
+                                
+                            </div>
+                        <br>
+
+                        <div id="fieldset">
+                            <fieldset>
+                                <legend>Work or Family</legend>
+                                <input type="radio" name="type" id="work" value="work" checked>
+                                <label for="work">Work</label>
+                                <br>
+
+                                <input type="radio" name="type" id="family" value="Family">
+                                <label for="family">Family</label>
+                                <br>
+                            </fieldset>
+                            <br>
+                            <input type="submit" name="" id="btnCadastraContato" value="Cadastra">
+                        </div>          
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div id="tabela">
+                <table>
+                    <caption><h2>Contatos</h2></caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Road</th>
+                            <th>Zip Code</th>
+                            <th>Number</th>
+                            <th>City/State</th>
+                            <th>Type</th>
+                            <th>Excluir</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contatosCadastrados">
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="contato.js"></script>
+    </body>
+</html>

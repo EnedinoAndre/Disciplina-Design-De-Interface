@@ -1,0 +1,166 @@
+body{
+    background-image: url("fundo.png");
+}
+.general{
+    display: table;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+}
+
+.center{
+    width: 500px;
+    height: 350px;
+    margin: auto;
+}
+
+.formCadastro{
+    width: auto;
+    height: auto;
+    margin: 0 auto auto auto;
+    padding: 23px;
+    border: 3px solid black;
+}
+
+form label {
+    font: bold 18px sans-serif;
+    
+}
+
+form input{
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+    font: 15px arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+form label, form fieldset{
+    font: bold 16px calibri, helvetica, Courier;
+}
+
+form input{
+    box-sizing: border-box;
+    border: 3px solid #ccc ;
+    font: 15px arial sans-serif;
+    margin-bottom: 12px;
+}
+
+form input [type="text"]{
+    width: 100%;
+    padding: 3px 5px ;
+}
+
+form fieldset{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+form fieldset input[type=radio]{
+    width: 13px;
+    height: 13px;
+}
+
+form fieldset label{
+    font: 15px Arial, sans-serif;
+}
+
+form input[type="submit"]{
+
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 12px 32px;
+    transition: 0.2s;
+    border-radius: 15px;
+    background-color: rgb(6, 49, 59);
+    color: rgb(253, 252, 252);
+    cursor: pointer;
+    font: 15px arial, sans-serif;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover{
+    background-color: lightslategray;
+    color: rgb(243, 241, 241);
+}
+
+form input[type="submit"]:active{
+    font-weight: bold;
+}
+
+table{
+    width: auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px;
+}
+
+table caption{
+    font: 15px sans-serif;
+    text-shadow: 2px 2px color #ccc;
+}
+
+table thead tr{
+    background-color: rgb(6, 49, 59);
+    color: white;
+    border: 2px double rgb(59, 59, 59);
+}
+
+table tbody tr:hover{
+    background-color: lightgray;
+}
+
+table thead tr th{
+    padding: 4px 8px;
+    border-bottom: 2px solid black;
+    border-right: 1px black solid;
+}
+
+table tbody td{
+    border: 2px double rgb(59,59,59);
+    padding: 4px 6px;
+    font: 15px sans-serif;
+}
+
+table button{
+    border-radius: 10px;
+    background-color:rgb(6, 49, 59);
+    color: rgb(254, 255, 255);
+    padding: 3px 15px ;
+}
+
+#center{
+    position: center;
+}
+#esquerda{
+    float: left;
+    margin-left: 15px;
+}
+#direita{
+    float: right;
+    margin-right: 5px;
+}
+#fieldset{
+    float: center;
+    margin-top: 190px;
+}
+#tabela{
+    margin-top: 10%;
+    float: inline-end;
+    position: relative;
+}
+
+.Family:hover{
+    background-color: rgb(41, 206, 77);
+    color: white;   
+}
+
+.Work:hover{
+    background-color: rgb(18, 95, 197);
+    color: white;
+}
+
