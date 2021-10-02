@@ -87,6 +87,10 @@ function editar(nome){
             var index = contatos.indexOf(contatos[i]);
             contatos[i].nome = document.getElementById("txtName").value;
             contatos[i].telefone = document.getElementById("txtPhone").value;
+            contatos[i].rua = document.getElementById("txtRoad").value;
+            contatos[i].cep = document.getElementById("txtZipCode").value;
+            contatos[i].numero = document.getElementById("txtNumber").value;
+            contatos[i].cidadeEstado = document.getElementById("txtCityState").value;
             contatos[i].type = document.getElementById("work").checked ? 'W' : 'F';
 
             localStorage.setItem('value',JSON.stringify(contatos));
