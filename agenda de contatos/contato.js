@@ -81,7 +81,7 @@ function excluir(nome){
 }
 
 function editar(nome){
-
+    
     for(i=0;i<contatos.length;i++){
         if(contatos[i].nome === nome){
             var index = contatos.indexOf(contatos[i]);
@@ -95,7 +95,7 @@ function editar(nome){
 
             localStorage.setItem('value',JSON.stringify(contatos));
 
-            document.getElementById("formCadastro").reset();
+            //document.getElementById("formCadastro").reset();
             alert("Contato Editado");
             listar();
         }

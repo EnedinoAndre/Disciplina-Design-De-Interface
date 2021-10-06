@@ -74,18 +74,20 @@ form input[type="submit"]{
     margin-left: 25%;
     margin-right: 25%;
     padding: 12px 32px;
-    transition: 0.2s;
     border-radius: 15px;
     background-color: rgb(6, 49, 59);
     color: rgb(253, 252, 252);
-    cursor: pointer;
     font: 15px arial, sans-serif;
     font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 form input[type="submit"]:hover{
     background-color: rgb(41, 206, 77);
     color: rgb(243, 241, 241);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 form input[type="submit"]:active{
@@ -131,6 +133,13 @@ table button{
     background-color:rgb(6, 49, 59);
     color: rgb(254, 255, 255);
     padding: 3px 15px ;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+table button:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #center{
