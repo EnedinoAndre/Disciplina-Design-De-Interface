@@ -4,7 +4,8 @@ window.onload = () =>{
 
     //SÓ MOSTRAR SE O LOCAL STORAGE ESTIVER COM DADOS 
     if(localStorage.getItem('value') != null){
-        listar()
+
+        listar();
     }
     //pegar elemento formulário e chamar um evento. esse evento terá dois parâmetros(botão,e a função que irá realizar).
     document.getElementById("formCadastro").addEventListener("submit",adicionar);
@@ -14,10 +15,8 @@ window.onload = () =>{
 }
 // ---------------------- FUNÇÕES ------------------------------
 function adicionar(){
-    var contatos = [];
+    //var contatos = [];
 
-    contatos = JSON.parse(localStorage.getItem('value'));
-    
     var contato = {
         nome: document.getElementById("txtName").value,
         telefone: document.getElementById("txtPhone").value,
@@ -81,7 +80,7 @@ function excluir(nome){
 }
 
 function editar(nome){
-    
+
     for(i=0;i<contatos.length;i++){
         if(contatos[i].nome === nome){
             var index = contatos.indexOf(contatos[i]);
@@ -92,10 +91,11 @@ function editar(nome){
             contatos[i].numero = document.getElementById("txtNumber").value;
             contatos[i].cidadeEstado = document.getElementById("txtCityState").value;
             contatos[i].type = document.getElementById("work").checked ? 'W' : 'F';
+            
 
             localStorage.setItem('value',JSON.stringify(contatos));
 
-            //document.getElementById("formCadastro").reset();
+            document.getElementById("formCadastro").reset();
             alert("Contato Editado");
             listar();
         }
